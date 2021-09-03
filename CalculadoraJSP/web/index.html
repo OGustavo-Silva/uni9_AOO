@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Calculadora</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Calculadorinha</h1>
+        <hr>
+        
+        <form method="post" action="calcula.jsp">
+            <label for="valor1">Valor 1:</label>
+            <input type="number" step="0.1" name="valor1" id="valor1" required/>
+            <br>
+            <label for="valor2">Valor 1:</label>
+            <input type="number" step="0.1" name="valor2" id="valor2" required/>
+            <br><br>
+            <input type="radio" name="operacao" value="somar" checked/>Somar
+            <input type="radio" name="operacao" value="subtrair"/>Subtrair
+            <input type="radio" name="operacao" value="multiplicar"/>Multiplicar
+            <input type="radio" name="operacao" value="dividir"/>Dividir
+            <br><br>
+            <input type="submit" value="Calcular"/>
+        </form>
+        
+    </body>
+</html>
